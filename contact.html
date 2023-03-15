@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil Festival</title>
+<meta name="author" content="C. Ruth">
+<meta name="keyword" content="cinéma, films, acteurs, réalisateurs">
+<meta name="description" content="Le festival CinéMoi est la rencontre des amateurs et des professionnels du 7e art.">
+<meta name="generator" content="Notepad++">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+</head>
+<body>
+<header>
+	<div>
+		<img src="logo.png" alt="Festival 2023" width="300" height="150">
+		<h1>Festival 2023</h1>
+	</div>
+</header>
+<main>
+	<section>
+		<h2>Contact</h2>
+		
+		<div>
+			<form action="traiter.php" method="post">
+				<fieldset>
+					<legend>Données de contact</legend>
+					
+					<div>
+						<label for="fullname">Nom</label>
+						<input type="text" name="fullname" id="fullname">
+					</div>
+					
+					<div>
+						<label for="mail">Email</label>
+						<input type="email" name="mail" id="mail" required>
+					</div>
+				</fieldset>	
+				
+				<fieldset>
+					<div>
+						<label for="category">Catégorie</label>
+						<select name="category" id="category">
+							<option>Veuillez choisir une catégorie</option>
+							<option value="blog">Blog</option>
+							<option value="prices">Tarifs</option>
+							<option value="guests">Invités</option>
+						</select>
+					</div>
+					
+					<div>
+						<label for="subject">Sujet</label>
+						<input type="text" name="subject" id="subject" required>
+					</div>
+					
+					<div>
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="50" rows="10" required></textarea>
+					</div>
+					
+					<div>
+						<input type="checkbox" name="acceptance" id="acceptance">
+						<label for="acceptance">J'accepte que mon message soit publié dans le forum.</label>
+					</div>
+				</fieldset>
+				<button type="reset">Effacer tout</button>
+				<button type="submit">Envoyer</button>
+			</form>
+		</div>
+	</section>
+	<aside>
+	</aside>
+</main>
+<footer>
+</footer>
+</body>
+</html>
